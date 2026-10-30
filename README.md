@@ -88,38 +88,6 @@ npm run preview
 
 ---
 
-## 🌐 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import the repository at [vercel.com](https://vercel.com)
-3. Vercel auto-detects Vite — click **Deploy**
-
-For client-side routing support, create a `vercel.json` in the project root:
-
-```json
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
-```
-
-### Netlify
-
-Create a `_redirects` file in the `public/` folder:
-```
-/*  /index.html  200
-```
-
-### Manual Deployment (any static host)
-
-```bash
-npm run build
-# Upload the `dist/` folder to your hosting service
-```
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -146,19 +114,6 @@ src/
 
 ---
 
-## ⚙️ Environment Variables
-
-This project has no required environment variables — it uses local mock data.
-
-For connecting to a real backend, you would add:
-
-```env
-VITE_API_URL=https://your-api.com
-VITE_API_KEY=your_api_key
-```
-
----
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -168,13 +123,3 @@ VITE_API_KEY=your_api_key
 5. Open a Pull Request
 
 ---
-
-## 📄 License
-
-MIT License — see [LICENSE](./LICENSE) for details.
-
----
-
-## ⚠️ Disclaimer
-
-This is a **frontend demonstration** with realistic mock data. No real payment processors, live analytics APIs, or remote databases are connected. All data is generated locally and resets between sessions (except localStorage settings).
